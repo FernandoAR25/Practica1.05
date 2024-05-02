@@ -24,12 +24,14 @@
     "escape-html": "^1.0.3",
     "etag": "^1.8.1",
     "express": "^4.19.2",
+    "express-handlebars": "^7.1.2",
     "finalhandler": "^1.2.0",
     "forwarded": "^0.2.0",
     "fresh": "^0.5.2",
     "function-bind": "^1.1.2",
     "get-intrinsic": "^1.2.4",
     "gopd": "^1.0.1",
+    "handlebars": "^4.7.8",
     "has-property-descriptors": "^1.0.2",
     "has-proto": "^1.0.3",
     "has-symbols": "^1.0.3",
@@ -68,7 +70,9 @@
     "utils-merge": "^1.0.1",
     "vary": "^1.1.2"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "nodemon": "^3.1.0"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
