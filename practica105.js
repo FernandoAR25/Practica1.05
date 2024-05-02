@@ -36,16 +36,16 @@ app.put('/', (req, res) => {
 
 //Prueba error 500
 app.get('/error', (req, res, next) => {
-    next(new Error('Forced 500 Error'));
+    next(new Error('Forced 404 Error'));
 });
 
 
 const fotos = {
-    "foto1":{img:"imagenes/ima1.jpg",url:"https://www.youtube.com/watch?v=G5bDu9D5BV4"},
-    "foto2":{img:"imagenes/ima2.jpg",url:"https://www.youtube.com/watch?v=GVk9GbK91tg"},
-    "foto3":{img:"imagenes/ima3.jpg",url:"https://www.youtube.com/watch?v=_oXVUE2IWtA"},
-    "foto4":{img:"imagenes/ima4.jpg",url:"https://www.youtube.com/watch?v=KHj8AI35hV8"},
-    "foto5":{img:"imagenes/ima5.jpg",url:"https://www.youtube.com/watch?v=IO5qwv_vJZM"}
+    "foto1":{img:"imagenes/ima1.jpg"},
+    "foto2":{img:"imagenes/ima2.jpg"},
+    "foto3":{img:"imagenes/ima3.jpg"},
+    "foto4":{img:"imagenes/ima4.jpg"},
+    "foto5":{img:"imagenes/ima5.jpg"},
 }
 
 //GET fotos aleatorias
