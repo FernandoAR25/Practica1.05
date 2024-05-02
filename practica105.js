@@ -7,11 +7,11 @@ dotenv.config();
 const app = express();
 const port = process.env.PORT || 8000;
 
-app.engine('handlebars', exphbs.engine({ defaultLayout: 'main' }));
+app.engine('handlebars', exphbs.engine({ defaultLayout: 'principal' }));
 app.set('view engine', 'handlebars');
 
 const __filename = fileURLToPath(import.meta.url);
-const _dirname = dirname(_filename);
+const __dirname = dirname(__filename);
 
 app.set('views',path.join(__dirname,'views'));
 
