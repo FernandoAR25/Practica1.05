@@ -7,7 +7,7 @@ dotenv.config();
 const app = express();
 const port = process.env.PORT || 8000;
 
-app.engine('handlebars', exphbs.engine({ defaultLayout: 'principal' }));
+app.engine('handlebars', exphbs.engine({ defaultLayout: 'main' }));
 app.set('view engine', 'handlebars');
 
 const __filename = fileURLToPath(import.meta.url);
@@ -41,11 +41,11 @@ app.get('/error', (req, res, next) => {
 
 
 const fotos = {
-    "foto1":{img:"images/ima1.jpg",url:"https://www.youtube.com/watch?v=G5bDu9D5BV4"},
-    "foto2":{img:"images/ima2.jpg",url:"https://www.youtube.com/watch?v=GVk9GbK91tg"},
-    "foto3":{img:"images/ima3.jpg",url:"https://www.youtube.com/watch?v=_oXVUE2IWtA"},
-    "foto4":{img:"images/ima4.jpg",url:"https://www.youtube.com/watch?v=KHj8AI35hV8"},
-    "foto5":{img:"images/ima5.jpg",url:"https://www.youtube.com/watch?v=IO5qwv_vJZM"}
+    "foto1":{img:"imagenes/ima1.jpg",url:"https://www.youtube.com/watch?v=G5bDu9D5BV4"},
+    "foto2":{img:"imagenes/ima2.jpg",url:"https://www.youtube.com/watch?v=GVk9GbK91tg"},
+    "foto3":{img:"imagenes/ima3.jpg",url:"https://www.youtube.com/watch?v=_oXVUE2IWtA"},
+    "foto4":{img:"imagenes/ima4.jpg",url:"https://www.youtube.com/watch?v=KHj8AI35hV8"},
+    "foto5":{img:"imagenes/ima5.jpg",url:"https://www.youtube.com/watch?v=IO5qwv_vJZM"}
 }
 
 //GET fotos aleatorias
